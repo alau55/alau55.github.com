@@ -1,0 +1,32 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function replaceName() {
+            var myNewName = window.prompt('Pick a new name!');
+            document.getElementById('user-name').innerHTML = myNewName;
+        }
+        document.onclick = replaceName;
+    </script>
+    <style>
+        .attention{
+            border: 1px solid green;
+        }
+         h1 {
+        font-size: 20px;
+        border-bottom: 1px solid #cccccc;
+        }
+        p{
+         padding: 10px;
+         background-color: papayaWhip;  
+        }
+        #user-name {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body></body>
+    <h1>Hello<em>World</em>!</h1>
+    <p class="attention">My Name is <span id="user-name">Rachel</span>.</p>
+    <p>In my free time, I enjoy math, Railsbridge, soccer and shopping for fancy hats</p>
+</body>
+</html>
